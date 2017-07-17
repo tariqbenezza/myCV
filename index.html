@@ -450,9 +450,7 @@
     </style>
     <script type="text/javascript" class="silex-script">
         $( document ).ready(function() {
-            var clicked=false;
             $('.avatar').click(function() {
-                clicked=true;
                 $('.drapeau').fadeIn('slow');
                 $('html,body').css('cursor','pointer');
                 $('.presentation').html('<div class="silex-element-content normal"><div style="text-align: center;"><font size="5" style="font-family: verdana, sans-serif;">Ingénieur support&nbsp;</font><span style="font-family: verdana, sans-serif;">&nbsp;</span></div><div style="text-align: center;"><font face="verdana, sans-serif"></font><span style="font-size: x-large; font-family: verdana, sans-serif;">&amp;&nbsp;</span>&nbsp;</div><div style="text-align: center;"><font size="5" style="font-family: verdana, sans-serif;">Chercheur de solutions</font><span style="font-family: verdana, sans-serif;"></span></div></div>') ;
@@ -465,13 +463,6 @@
                 $('.drapeau').hide();
                 $('html,body').css('cursor','default');
             });
-            
-            $('.avatar').click(function(){
-                if(!clicked){
-                    console.log("otot");
-                }
-            });
-            
             
         });
     </script>
@@ -2157,6 +2148,9 @@
 
 
 
+
+
+
     <meta name="twitter:card" content="summary">
     <style id="current-page-style">
         .page-page-1 {
@@ -3147,6 +3141,8 @@
 
 
     </div>
+
+
 
 
 
