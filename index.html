@@ -1,0 +1,3257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.7">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="//editor.silex.me/static/2.7/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="//editor.silex.me/static/2.7/front-end.css" data-silex-static="">
+
+    <style type="text/css" class="silex-style">
+        body {
+            -webkit-font-smoothing: subpixel-antialiased;
+        }
+        
+        .a-day-print {
+            display: none;
+        }
+        
+        .a-day-print-liseret {
+            display: none;
+        }
+        
+        .a-day-print-score {
+            display: block;
+        }
+        
+        @media (max-width: 568px) {
+            .twitter {
+                display: none;
+            }
+            .github {
+                display: none;
+            }
+            .linkedin {
+                display: none;
+            }
+            .phone {
+                position: absolute!important;
+                left: 30px!important;
+                top: 18px!important;
+            }
+            .pinpoint {
+                position: absolute!important;
+                left: 30px!important;
+                top: 72px!important;
+            }
+            .arobase {
+                display: none;
+            }
+            .avatar {
+                display: none;
+            }
+            .mostproud {
+                display: none;
+            }
+            .mostproud-liseret {
+                display: none;
+            }
+            .generosity-icon {
+                display: none;
+            }
+            .generosity {
+                display: none;
+            }
+            .loyalty-icon {
+                display: none;
+            }
+            .loyalty {
+                display: none;
+            }
+            .growth-icon {
+                display: none;
+            }
+            .growth {
+                display: none;
+            }
+            .inspiring {
+                display: none;
+            }
+            .inspiring-icon {
+                display: none;
+            }
+            .day-in-my-life {
+                display: none!important;
+            }
+            .presentation {
+                position: absolute!important;
+                left: 0px!important;
+                right: 0px!important;
+                top: 150px!important;
+            }
+            .experience-liseret {
+                max-width: 100%!important;
+            }
+            /*
+    Company & Role details
+    */
+            .title {
+                position: absolute!important;
+                top: 0px!important;
+                left: 0!important;
+                right: 0!important;
+            }
+            .calendar-company {
+                position: absolute!important;
+                top: 35px!important;
+                left: 0px!important;
+                right: 300px!important;
+            }
+            .period-company {
+                position: absolute!important;
+                top: 38px!important;
+                left: 0px!important;
+                width: 125px!important;
+                right: 140px!important;
+            }
+            .pinpoint-company {
+                position: absolute!important;
+                top: 35px!important;
+                left: 150px!important;
+                right: 140px!important;
+            }
+            .place-company {
+                position: absolute!important;
+                top: 38px!important;
+                left: 170px!important;
+                right: 0px!important;
+            }
+            .company {
+                position: absolute!important;
+                top: 100px!important;
+                left: 0px!important;
+                right: 0px!important;
+                margin: auto!important;
+                width: 100%!important;
+                height: 21px!important;
+                text-align: center!important;
+            }
+            .company-description {
+                position: absolute!important;
+                top: 125px!important;
+                left: 0px!important;
+            }
+            /*
+    Right Column
+    */
+            .right-column {
+                position: absolute!important;
+                left: 0px!important;
+                right: 0px!important;
+                width: 100%!important;
+                margin: auto!important;
+                top: 2300px!important;
+            }
+            .language {
+                position: absolute!important;
+                top: 0px!important;
+                right: 0px!important;
+                left: 0px!important;
+            }
+            .language-liseret {
+                position: absolute!important;
+                top: 40px!important;
+                width: 100%!important;
+            }
+            .language-score {
+                position: absolute!important;
+                top: 55px!important;
+                left: 0px!important;
+                right: 0px!important;
+                margin: auto!important;
+            }
+            .tech-skills {
+                position: absolute!important;
+                top: 170px!important;
+                left: 0px!important;
+                right: 0px!important;
+                margin: auto!important;
+            }
+            .tech-skills-liseret {
+                position: absolute!important;
+                top: 210px!important;
+                width: 100%!important;
+            }
+            .tech-skills-score {
+                position: absolute!important;
+                top: 235px!important;
+                left: 0px!important;
+                right: 0px!important;
+                margin: auto!important;
+            }
+            .education {
+                position: absolute!important;
+                top: 505px!important;
+                left: 0px!important;
+                right: 0px!important;
+            }
+            .education-liseret {
+                position: absolute!important;
+                top: 545px!important;
+                width: 100%!important;
+            }
+            .md-degre {
+                position: absolute!important;
+                top: 570px!important;
+                left: 0px!important;
+                right: 0px!important;
+            }
+            .md-calendar {
+                position: absolute!important;
+                top: 610px!important;
+                left: 140px!important;
+            }
+            .md-date {
+                position: absolute!important;
+                top: 613px!important;
+                left: 165px!important;
+            }
+            .bd-degre {
+                position: absolute!important;
+                top: 670px!important;
+                left: 0px!important;
+                right: 0px!important;
+            }
+            .bd-calendar {
+                position: absolute!important;
+                top: 710px!important;
+                left: 140px!important;
+            }
+            .bd-date {
+                position: absolute!important;
+                top: 713px!important;
+                left: 165px!important;
+            }
+        }
+        
+        @media print {
+            /* All your print styles go here */
+            @page {
+                size: auto;
+                margin: 0mm;
+            }
+            .linkedin {
+                display: none;
+            }
+            .github {
+                display: none;
+            }
+            .twitter {
+                display: none;
+            }
+            .contacts {
+                margin-left: 10px;
+            }
+            .resume {
+                margin-left: 10px;
+            }
+            .experience {
+                margin-left: 10px;
+            }
+            .experience-liseret {
+                margin-left: 10px;
+            }
+            .mostproud {
+                display: none;
+            }
+            .mostproud-liseret {
+                display: none;
+            }
+            .generosity-icon {
+                display: none;
+            }
+            .generosity {
+                display: none;
+            }
+            .title {
+                margin-left: 10px;
+            }
+            .company {
+                margin-left: 10px;
+            }
+            .calendar-company {
+                margin-left: 10px;
+            }
+            .period-company {
+                margin-left: 10px;
+            }
+            .pinpoint-company {
+                margin-left: 10px;
+            }
+            .place-company {
+                margin-left: 10px;
+            }
+            .loyalty-icon {
+                display: none;
+            }
+            .loyalty {
+                display: none;
+            }
+            .growth-icon {
+                display: none;
+            }
+            .growth {
+                display: none;
+            }
+            .inspiring-icon {
+                display: none;
+            }
+            .inspiring {
+                display: none;
+            }
+            .language {
+                position: absolute!important;
+                top: 346px!important;
+                right: 10px!important;
+            }
+            .language-liseret {
+                position: absolute!important;
+                top: 391px!important;
+                right: 10px!important;
+            }
+            .language-score {
+                position: absolute!important;
+                top: 410px!important;
+                right: 10px!important;
+            }
+            .tech-skills {
+                position: absolute!important;
+                top: 515px!important;
+                right: 10px!important;
+            }
+            .tech-skills-liseret {
+                position: absolute!important;
+                top: 560px!important;
+                right: 10px!important;
+            }
+            .tech-skills-score {
+                position: absolute!important;
+                top: 579px!important;
+                right: 10px!important;
+            }
+            .education {
+                position: absolute!important;
+                top: 836px!important;
+                right: 10px!important;
+            }
+            .education-liseret {
+                position: absolute!important;
+                top: 881px!important;
+                right: 10px!important;
+            }
+            .md-degre {
+                position: absolute!important;
+                top: 900px!important;
+                right: 10px!important;
+            }
+            .md-calendar {
+                position: absolute!important;
+                top: 945px!important;
+                right: 10px!important;
+            }
+            .md-date {
+                position: absolute!important;
+                top: 949px!important;
+                right: 10px!important;
+            }
+            .bd-degre {
+                position: absolute!important;
+                top: 987px!important;
+                right: 10px!important;
+            }
+            .bd-calendar {
+                position: absolute!important;
+                top: 1032px!important;
+                right: 10px!important;
+            }
+            .bd-date {
+                position: absolute!important;
+                top: 1036px!important;
+                right: 10px!important;
+            }
+            .day-in-my-life {
+                display: none;
+            }
+            .a-day-print {
+                display: none;
+                position: absolute!important;
+                top: 1076px!important;
+                right: 10px!important;
+            }
+            .a-day-print-liseret {
+                display: none;
+                position: absolute!important;
+                top: 1200px!important;
+                right: 10px!important;
+            }
+        }
+    </style>
+    <script type="text/javascript" class="silex-script">
+        /*
+        $( document ).ready(function() {
+            var clicked=false;
+            $('.avatar').click(function() {
+                clicked=true;
+                $('.drapeau').fadeIn('slow');
+                $('html,body').css('cursor','pointer');
+                $('.presentation').html('<div class="silex-element-content normal"><div style="text-align: center;"><font size="5" style="font-family: verdana, sans-serif;">Ingénieur support&nbsp;</font><span style="font-family: verdana, sans-serif;">&nbsp;</span></div><div style="text-align: center;"><font face="verdana, sans-serif"></font><span style="font-size: x-large; font-family: verdana, sans-serif;">&amp;&nbsp;</span>&nbsp;</div><div style="text-align: center;"><font size="5" style="font-family: verdana, sans-serif;">Chercheur de solutions</font><span style="font-family: verdana, sans-serif;"></span></div></div>') ;
+                $('.resume').html('<div class="silex-element-content normal"><div><i><font face="verdana, sans-serif">Plus de cinq ans d\'experience dans le developpement web, la formation, le support utilisateur et le management.</font></i></div><div><i><font face="verdana, sans-serif">Né en France, j\'ai eu l\'occasion de travailler à l\'international dans d\'autres pays.</font></i></div><div><i><font face="verdana, sans-serif">Mes experiences font de moi un leader fiable, serein et capable de prendre les initiatives nécessaires pour faire grandir une entreprise.</font></i></div></div>');
+                $('.title.sm').html('<div class="silex-element-content normal"><font size="4" face="verdana, sans-serif"><b>Ingénieur Support Senior</b></font></div>');
+                $('.company-description.sm').html('<div class="silex-element-content normal"><div><ul><li><font face="verdana, sans-serif">Support proactif dans la relation avec les clients et les partenaires.</font></li><li><font face="verdana, sans-serif">Developpements et livraisons de diverses solutions personnalisées. Concepts techniques avancés en pré-vente.</font></li><li><font face="verdana, sans-serif">Participation à l\'élaboration du produit, de la vente, de la formation et maintenance de la documentation..</font></li></ul></div></div>');
+            });
+            
+            $('.avatar').mouseleave(function() {
+                $('.drapeau').hide();
+                $('html,body').css('cursor','default');
+            });
+            
+            $('.avatar').click(function(){
+                if(!clicked){
+                    console.log("otot");
+                }
+            });
+            
+            
+        });
+        */
+    </script>
+    <style class="silex-inline-styles" type="text/css">
+        .body-initial {
+            background-color: rgba(255, 255, 255, 1);
+            background-image: url('img/bg-pattern.png');
+        }
+        
+        .silex-id-1498053985528-2 {
+            top: 5px;
+            left: 5px;
+        }
+        
+        .silex-id-1498053985527-1 {
+            min-height: 100px;
+        }
+        
+        .silex-id-1498054010607-3 {
+            width: 465px;
+            top: 40px;
+            left: 0px;
+            min-height: 57px;
+            font-weight: bold;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054010607-3 {
+                width: 391px;
+                min-height: 58px;
+            }
+        }
+        
+        .silex-id-1498815121143-7 {
+            width: 365px;
+            top: 65px;
+            left: 825px;
+            background-color: transparent;
+            min-height: 2449px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498815121143-7 {
+                width: 455px;
+                top: 2323px;
+                left: 12px;
+                background-color: transparent;
+                min-height: 768px;
+            }
+        }
+        
+        .silex-id-1498231464593-66 {
+            width: 252px;
+            top: 1565px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            background-color: transparent;
+            min-height: 20px;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498231464593-66 {
+                left: 11px;
+                top: -1778px;
+            }
+        }
+        
+        .silex-id-1498140136781-1 {
+            width: 223px;
+            top: 1px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            min-height: 224px;
+            border-radius: 1000px 1000px 1000px 1000px;
+            z-index: 2;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498140136781-1 {
+                min-height: 100px;
+                top: 4739px;
+                left: 276px;
+                width: 115px;
+            }
+        }
+        
+        .silex-id-1498225439882-46 {
+            width: 30px;
+            min-height: 30px;
+            top: 426px;
+            left: 59px;
+        }
+        
+        .silex-id-1498225520719-47 {
+            width: 198px;
+            min-height: 100px;
+            top: 419px;
+            left: 100px;
+        }
+        
+        .silex-id-1498226626422-48 {
+            width: 30px;
+            min-height: 30px;
+            top: 556px;
+            left: 59px;
+        }
+        
+        .silex-id-1498228881073-59 {
+            width: 185px;
+            top: 975px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            min-height: 37px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498228881073-59 {
+                left: 136px;
+                top: 0px;
+                width: 184px;
+                min-height: 37px;
+            }
+        }
+        
+        .silex-id-1498226663969-49 {
+            width: 198px;
+            min-height: 100px;
+            top: 554px;
+            left: 100px;
+        }
+        
+        .silex-id-1498228151549-57 {
+            width: 30px;
+            min-height: 30px;
+            top: 816px;
+            left: 59px;
+        }
+        
+        .silex-id-1498228174808-58 {
+            width: 198px;
+            min-height: 100px;
+            top: 824px;
+            left: 100px;
+        }
+        
+        .silex-id-1498229060148-61 {
+            width: 252px;
+            top: 1042px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            min-height: 100px;
+            background-color: transparent;
+        }
+        
+        .silex-id-1498231074627-62 {
+            width: 217px;
+            top: 1157px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            min-height: 21px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498231074627-62 {
+                min-height: 36px;
+                top: 583px;
+                left: 76px;
+                width: 213px;
+            }
+        }
+        
+        .silex-id-1498227268553-50 {
+            width: 30px;
+            min-height: 30px;
+            top: 686px;
+            left: 59px;
+        }
+        
+        .silex-id-1498227296723-51 {
+            width: 198px;
+            min-height: 100px;
+            top: 689px;
+            left: 100px;
+        }
+        
+        .silex-id-1498231074645-63 {
+            width: 252px;
+            top: 1203px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            background-color: transparent;
+            min-height: 20px;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+        }
+        
+        .silex-id-1498231158135-64 {
+            width: 252px;
+            top: 1227px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            min-height: 100px;
+            background-color: transparent;
+        }
+        
+        .silex-id-1498228881103-60 {
+            width: 252px;
+            top: 1023px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            background-color: transparent;
+            min-height: 21px;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+        }
+        
+        .silex-id-1498224948680-38 {
+            width: 171px;
+            top: 346px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            min-height: 37px;
+        }
+        
+        .silex-id-1498225143399-45 {
+            width: 252px;
+            top: 391px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            background-color: transparent;
+            min-height: 21px;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+        }
+        
+        .silex-id-1498232022889-71 {
+            width: 20px;
+            min-height: 22px;
+            top: 1639px;
+            left: 61px;
+        }
+        
+        .silex-id-1498232022904-72 {
+            width: 40px;
+            min-height: 21px;
+            top: 1643px;
+            left: 88px;
+        }
+        
+        .silex-id-1498231464589-65 {
+            width: 190px;
+            top: 1524px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            min-height: 37px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498231464589-65 {
+                top: 1227px;
+                left: 95px;
+                width: 191px;
+                min-height: 36px;
+            }
+        }
+        
+        .silex-id-1498231953064-68 {
+            width: 20px;
+            min-height: 22px;
+            top: 1722px;
+            left: 61px;
+        }
+        
+        .silex-id-1498231962083-69 {
+            width: 40px;
+            min-height: 21px;
+            top: 1725px;
+            left: 88px;
+        }
+        
+        .silex-id-1498232022875-70 {
+            width: 252px;
+            min-height: 72px;
+            top: 1681px;
+            left: 56px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498232022875-70 {
+                top: 1189px;
+                left: 227px;
+                width: 195px;
+                min-height: 72px;
+            }
+        }
+        
+        .silex-id-1498827480807-9 {
+            width: 252px;
+            min-height: 65px;
+            top: 1594px;
+            left: 56px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498827480807-9 {
+                top: 570px;
+                left: 129px;
+                width: 197px;
+                min-height: 65px;
+            }
+        }
+        
+        .silex-id-1499268704859-0 {
+            width: 40px;
+            top: 152px;
+            left: 199px;
+            display: none;
+            min-height: 26px;
+            z-index: 3;
+        }
+        
+        .silex-id-1499697527046-0 {
+            width: 252px;
+            top: 1882px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            background-color: transparent;
+            min-height: 20px;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1499697527046-0 {
+                left: 11px;
+                top: -1778px;
+            }
+        }
+        
+        .silex-id-1499697527062-1 {
+            width: 190px;
+            top: 1764px;
+            left: 0px;
+            right: 0px;
+            margin: auto;
+            min-height: 37px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1499697527062-1 {
+                top: 1227px;
+                left: 95px;
+                width: 191px;
+                min-height: 36px;
+            }
+        }
+        
+        .silex-id-1498054122181-5 {
+            top: 140px;
+            left: 5px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054122181-5 {
+                top: 60px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1498054122181-4 {
+            min-height: 88px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054122181-4 {
+                min-height: 230px;
+            }
+        }
+        
+        .silex-id-1498485623096-2 {
+            width: 31px;
+            min-height: 31px;
+            top: 32px;
+            left: 565px;
+        }
+        
+        .silex-id-1498485495610-1 {
+            width: 31px;
+            min-height: 31px;
+            top: 32px;
+            left: 525px;
+        }
+        
+        .silex-id-1498054131009-6 {
+            width: 465px;
+            min-height: 82px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054131009-6 {
+                width: 304px;
+                top: 150px;
+                left: 70px;
+                min-height: 54px;
+            }
+        }
+        
+        .silex-id-1498485026494-0 {
+            width: 31px;
+            min-height: 31px;
+            top: 32px;
+            left: 485px;
+        }
+        
+        .silex-id-1499271152971-1 {
+            width: 35px;
+            top: 103px;
+            left: 1356px;
+            display: none;
+            min-height: 23px;
+        }
+        
+        .silex-id-1498054233829-8 {
+            top: 195px;
+            left: 5px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054233829-8 {
+                top: 230px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1498054233828-7 {
+            min-height: 59px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054233828-7 {
+                min-height: 198px;
+                top: 0px;
+                left: 11px;
+                width: 457px;
+            }
+        }
+        
+        .silex-id-1498658592101-3 {
+            width: 599px;
+            background-color: transparent;
+            min-height: 58px;
+            top: 0px;
+            left: 1px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498658592101-3 {
+                top: 14px;
+                left: 102px;
+                width: 250px;
+                min-height: 169px;
+            }
+        }
+        
+        .silex-id-1498054727408-3 {
+            width: 127px;
+            min-height: 21px;
+            top: 17px;
+            left: 284px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054727408-3 {
+                left: 110px;
+                top: 5241px;
+            }
+        }
+        
+        .silex-id-1498054823568-6 {
+            width: 21px;
+            min-height: 21px;
+            top: 15px;
+            left: 427px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054823568-6 {
+                width: 21px;
+                top: 5173px;
+                left: 435px;
+                min-height: 21px;
+            }
+        }
+        
+        .silex-id-1498054849159-7 {
+            width: 127px;
+            min-height: 21px;
+            top: 17px;
+            left: 449px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054849159-7 {
+                left: 185px;
+                top: 4934px;
+            }
+        }
+        
+        .silex-id-1498054245702-9 {
+            width: 21px;
+            min-height: 21px;
+            top: 15px;
+            left: 0px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054245702-9 {
+                left: 274px;
+                top: 38px;
+                width: 20px;
+                min-height: 21px;
+            }
+        }
+        
+        .silex-id-1498054705241-2 {
+            width: 21px;
+            min-height: 21px;
+            top: 15px;
+            left: 254px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054705241-2 {
+                left: 172px;
+                top: 5094px;
+            }
+        }
+        
+        .silex-id-1498054608406-0 {
+            width: 212px;
+            top: 16px;
+            left: 25px;
+            min-height: 21px;
+            z-index: 2;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498054608406-0 {
+                left: 89px;
+                top: 5094px;
+            }
+        }
+        
+        .silex-id-1498140563494-3 {
+            top: 289px;
+            left: 5px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498140563494-3 {
+                top: 488px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1498140563493-2 {
+            min-height: 216px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498140563493-2 {
+                min-height: 284px;
+                top: 0px;
+                left: 14px;
+                width: 451px;
+            }
+        }
+        
+        .silex-id-1498224697016-37 {
+            width: 764px;
+            min-height: 103px;
+            top: 25px;
+            left: 0px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498224697016-37 {
+                top: 4px;
+                left: 12px;
+                width: 432px;
+                min-height: 189px;
+            }
+        }
+        
+        .silex-id-1498140567588-4 {
+            width: 220px;
+            min-height: 36px;
+            top: 164px;
+            left: 0px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498140567588-4 {
+                width: 220px;
+            }
+        }
+        
+        .silex-id-1498142759946-4 {
+            top: 361px;
+            left: 5px;
+        }
+        
+        .silex-id-1498142759945-3 {
+            min-height: 20px;
+        }
+        
+        .silex-id-1498142765944-5 {
+            width: 764px;
+            background-color: transparent;
+            min-height: 21px;
+            top: -7px;
+            left: 0px;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+        }
+        
+        .silex-id-1498142902364-7 {
+            top: 416px;
+            left: 5px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498142902364-7 {
+                top: 601px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1498142902362-6 {
+            min-height: 260px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498142902362-6 {
+                min-height: 420px;
+                top: 0px;
+                left: 12px;
+                width: 20px;
+            }
+        }
+        
+        .silex-id-1499183658984-2 {
+            width: 567px;
+            top: 39px;
+            left: 0px;
+            color: #4f5d6d;
+            min-height: 21px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1499183658984-2 {
+                left: 0px;
+                top: -649px;
+                width: 114px;
+                min-height: 25px;
+            }
+        }
+        
+        .silex-id-1498143087140-9 {
+            width: 567px;
+            min-height: 25px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498143087140-9 {
+                width: 365px;
+                top: 0px;
+                left: 45px;
+                min-height: 40px;
+            }
+        }
+        
+        .silex-id-1498144538986-4 {
+            width: 200px;
+            min-height: 21px;
+            top: 73px;
+            left: 26px;
+        }
+        
+        .silex-id-1498208603522-6 {
+            width: 108px;
+            min-height: 21px;
+            top: 73px;
+            left: 273px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498208603522-6 {
+                top: 35px;
+                left: 175px;
+                width: 135px;
+                min-height: 21px;
+            }
+        }
+        
+        .silex-id-1498208570717-5 {
+            width: 21px;
+            min-height: 21px;
+            top: 69px;
+            left: 250px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498208570717-5 {
+                top: 305px;
+                left: 217px;
+                width: 21px;
+                min-height: 20px;
+            }
+        }
+        
+        .silex-id-1498144495709-3 {
+            width: 21px;
+            min-height: 21px;
+            top: 69px;
+            left: 0px;
+        }
+        
+        .silex-id-1498144364402-2 {
+            width: 764px;
+            min-height: 100px;
+            top: 98px;
+            left: 0px;
+        }
+        
+        .silex-id-1498212161960-8 {
+            top: 766px;
+            left: 5px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498212161960-8 {
+                top: 1021px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1498212161949-7 {
+            min-height: 260px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498212161949-7 {
+                min-height: 426px;
+            }
+        }
+        
+        .silex-id-1498212553910-9 {
+            width: 567px;
+            min-height: 25px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498212553910-9 {
+                width: 218px;
+                min-height: 42px;
+                top: 0px;
+                left: 113px;
+            }
+        }
+        
+        .silex-id-1498214008319-12 {
+            width: 270px;
+            min-height: 21px;
+            top: 73px;
+            left: 26px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498214008319-12 {
+                top: 24px;
+                left: 116px;
+                width: 100px;
+                min-height: 76px;
+            }
+        }
+        
+        .silex-id-1498214008321-13 {
+            width: 21px;
+            min-height: 21px;
+            top: 69px;
+            left: 301px;
+        }
+        
+        .silex-id-1498214008323-14 {
+            width: 200px;
+            min-height: 21px;
+            top: 73px;
+            left: 324px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498214008323-14 {
+                top: 35px;
+                left: 257px;
+                width: 133px;
+                min-height: 21px;
+            }
+        }
+        
+        .silex-id-1498216259721-16 {
+            width: 764px;
+            min-height: 100px;
+            top: 98px;
+            left: 0px;
+        }
+        
+        .silex-id-1498751845681-6 {
+            width: 567px;
+            top: 39px;
+            left: 0px;
+            color: #4f5d6d;
+            min-height: 21px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498751845681-6 {
+                left: 165px;
+                top: 100px;
+                width: 114px;
+                min-height: 25px;
+            }
+        }
+        
+        .silex-id-1498214244774-15 {
+            width: 21px;
+            min-height: 21px;
+            top: 69px;
+            left: 0px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498216452485-18 {
+                top: 1447px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1498216452483-17 {
+            min-height: 260px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498216452483-17 {
+                min-height: 364px;
+            }
+        }
+        
+        .silex-id-1498217122966-24 {
+            width: 286px;
+            min-height: 21px;
+            top: 73px;
+            left: 271px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498217122966-24 {
+                top: 38px;
+                left: 244px;
+                width: 122px;
+                min-height: 40px;
+            }
+        }
+        
+        .silex-id-1498216603584-19 {
+            width: 567px;
+            min-height: 25px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498216603584-19 {
+                top: 0px;
+                left: 37px;
+                width: 370px;
+                min-height: 100px;
+            }
+        }
+        
+        .silex-id-1498216982199-21 {
+            width: 21px;
+            min-height: 21px;
+            top: 69px;
+            left: 0px;
+        }
+        
+        .silex-id-1498217009643-22 {
+            width: 220px;
+            min-height: 21px;
+            top: 73px;
+            left: 26px;
+        }
+        
+        .silex-id-1498217105246-23 {
+            width: 21px;
+            min-height: 21px;
+            top: 69px;
+            left: 248px;
+        }
+        
+        .silex-id-1498217315638-25 {
+            width: 764px;
+            min-height: 100px;
+            top: 111px;
+            left: 0px;
+        }
+        
+        .silex-id-1498831558401-0 {
+            width: 567px;
+            top: 39px;
+            left: 0px;
+            color: #4f5d6d;
+            min-height: 21px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498831558401-0 {
+                left: 193px;
+                top: 100px;
+                width: 115px;
+                min-height: 25px;
+            }
+        }
+        
+        .silex-id-1498217391131-27 {
+            top: 1645px;
+            left: 5px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498217391131-27 {
+                top: 1811px;
+                left: 0px;
+            }
+        }
+        
+        .silex-id-1498217391130-26 {
+            min-height: 260px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498217391130-26 {
+                min-height: 424px;
+            }
+        }
+        
+        .silex-id-1498217403632-28 {
+            width: 567px;
+            min-height: 25px;
+            top: 0px;
+            left: 0px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498217403632-28 {
+                top: 0px;
+                left: 54px;
+                width: 336px;
+                min-height: 100px;
+            }
+        }
+        
+        .silex-id-1498217627571-32 {
+            width: 21px;
+            min-height: 21px;
+            top: 69px;
+            left: 0px;
+        }
+        
+        .silex-id-1498217648257-33 {
+            width: 230px;
+            min-height: 21px;
+            top: 73px;
+            left: 26px;
+        }
+        
+        .silex-id-1498217659010-34 {
+            width: 21px;
+            min-height: 21px;
+            top: 69px;
+            left: 269px;
+        }
+        
+        .silex-id-1498217675613-35 {
+            width: 286px;
+            min-height: 21px;
+            top: 73px;
+            left: 292px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498217675613-35 {
+                top: 28px;
+                left: 246px;
+                width: 128px;
+                min-height: 38px;
+            }
+        }
+        
+        .silex-id-1498217783113-36 {
+            width: 764px;
+            min-height: 100px;
+            top: 111px;
+            left: 0px;
+        }
+        
+        .silex-id-1498831825924-1 {
+            width: 567px;
+            top: 39px;
+            left: 0px;
+            color: #4f5d6d;
+            min-height: 21px;
+        }
+        
+        @media only screen and (max-width: 480px),
+        only screen and (max-device-width: 480px) {
+            .silex-id-1498831825924-1 {
+                left: 174px;
+                top: 100px;
+                width: 114px;
+                min-height: 25px;
+            }
+        }
+        
+        .silex-id-1498233943231-78 {
+            min-height: 100px;
+        }
+        
+        .silex-id-1498233943230-77 {
+            min-height: 100px;
+        }
+        
+        .silex-id-1498233950932-79 {
+            width: 308px;
+            min-height: 36px;
+            top: 63px;
+            left: 0px;
+        }
+        
+        .silex-id-1498234033842-81 {
+            min-height: 100px;
+        }
+        
+        .silex-id-1498234033841-80 {
+            min-height: 100px;
+        }
+        
+        .silex-id-1498234049164-82 {
+            width: 764px;
+            background-color: transparent;
+            min-height: 21px;
+            top: 7px;
+            left: 0px;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+        }
+        
+        .silex-id-1498235947496-91 {
+            width: 227px;
+            min-height: 67px;
+            top: 58px;
+            left: 127px;
+        }
+        
+        .silex-id-1498235726247-87 {
+            top: 2225px;
+            left: 5px;
+        }
+        
+        .silex-id-1498235726246-86 {
+            min-height: 645px;
+        }
+        
+        .silex-id-1498235778757-88 {
+            width: 227px;
+            min-height: 41px;
+            top: 117px;
+            left: 535px;
+        }
+        
+        .silex-id-1498235832289-89 {
+            width: 227px;
+            min-height: 67px;
+            top: 493px;
+            left: 420px;
+        }
+        
+        .silex-id-1498235892088-90 {
+            width: 267px;
+            top: 511px;
+            left: 5px;
+            min-height: 76px;
+            z-index: 2;
+        }
+        
+        .silex-id-1498236044716-92 {
+            width: 266px;
+            top: 170px;
+            left: -42px;
+            min-height: 95px;
+            z-index: 2;
+        }
+        
+        .silex-id-1498236163629-94 {
+            width: 282px;
+            min-height: 114px;
+            top: 394px;
+            left: -83px;
+        }
+        
+        .silex-id-1498487120808-3 {
+            width: 100px;
+            top: 410px;
+            left: 200px;
+            /* chrome, safari, opera */
+            transform: rotate(45deg);
+            background-color: transparent;
+            min-height: 134px;
+            z-index: 2;
+            -ms-transform: rotate(45deg);
+            /* ie 9 */
+            -ms-transform-origin: 20% 40%;
+            /* ie 9 */
+            -webkit-transform: rotate(45deg);
+            /* chrome, safari, opera */
+            -webkit-transform-origin: 20% 40%;
+            transform-origin: 20% 40%;
+            border-width: 0 0 0 1px;
+            border-style: solid;
+        }
+        
+        .silex-id-1498487418874-4 {
+            width: 65px;
+            top: 356px;
+            left: 170px;
+            /* chrome, safari, opera */
+            transform: rotate(45deg);
+            background-color: transparent;
+            min-height: 115px;
+            z-index: 2;
+            -ms-transform: rotate(55deg);
+            /* ie 9 */
+            -ms-transform-origin: 20% 40%;
+            /* ie 9 */
+            -webkit-transform: rotate(55deg);
+            /* chrome, safari, opera */
+            -webkit-transform-origin: 20% 40%;
+            transform-origin: 20% 40%;
+            border-width: 0 0 0 1px;
+            border-style: solid;
+        }
+        
+        .silex-id-1498487969424-6 {
+            width: 101px;
+            top: 64px;
+            left: 232px;
+            /* chrome, safari, opera */
+            transform: rotate(45deg);
+            background-color: transparent;
+            min-height: 76px;
+            z-index: 2;
+            -ms-transform: rotate(55deg);
+            /* ie 9 */
+            -ms-transform-origin: 20% 40%;
+            /* ie 9 */
+            -webkit-transform: rotate(55deg);
+            /* chrome, safari, opera */
+            -webkit-transform-origin: 20% 40%;
+            transform-origin: 20% 40%;
+            border-width: 1px 0 0 0;
+            border-style: solid;
+        }
+        
+        .silex-id-1498573059514-9 {
+            width: 888px;
+            min-height: 654px;
+            top: -41px;
+            left: -74px;
+        }
+    </style>
+    <title>Tariq Benezza</title>
+    <script type="text/javascript" class="silex-json-styles">
+        [{"desktop":{"body-initial":{"background-color":"rgba(255,255,255,1)","background-image":"url('img/bg-pattern.png')"},"silex-id-1474394621032-2":{"min-height":"600px","background-color":"transparent","width":"1200px"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"53px","width":"349px","top":"29px","left":"430px"},"silex-id-1478366444112-0":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1478366450713-2":{"min-height":"100px","background-color":"transparent","width":"1200px"},"silex-id-1498053985527-1":{"width":"","background-color":"","min-height":"100px"},"silex-id-1498053985528-2":{"top":"5px","left":"5px"},"silex-id-1498054010607-3":{"width":"465px","top":"40px","left":"0px","min-height":"57px","font-weight":"bold"},"silex-id-1498054122181-4":{"width":"","background-color":"","min-height":"88px"},"silex-id-1498054122181-5":{"top":"140px","left":"5px"},"silex-id-1498054131009-6":{"width":"465px","min-height":"82px","top":"0px","left":"0px"},"silex-id-1498054233828-7":{"width":"","background-color":"","min-height":"59px"},"silex-id-1498054233829-8":{"top":"195px","left":"5px"},"silex-id-1498054245702-9":{"width":"21px","min-height":"21px","top":"15px","left":"0px"},"silex-id-1498054608406-0":{"width":"212px","top":"16px","left":"25px","min-height":"21px","z-index":"2"},"silex-id-1498054705241-2":{"width":"21px","min-height":"21px","top":"15px","left":"254px"},"silex-id-1498054727408-3":{"width":"127px","min-height":"21px","top":"17px","left":"284px"},"silex-id-1498054804488-4":{"width":"","background-color":"","min-height":"100px"},"silex-id-1498054823568-6":{"width":"21px","min-height":"21px","top":"15px","left":"427px"},"silex-id-1498054849159-7":{"width":"127px","min-height":"21px","top":"17px","left":"449px"},"silex-id-1498055085386-9":{"width":"","background-color":"","min-height":"100px"},"silex-id-1498055085387-10":{"min-height":"100px"},"silex-id-1498055330385-12":{"width":"295px","min-height":"65px","top":"13px","left":"29px"},"silex-id-1498140136781-1":{"width":"223px","top":"1px","left":"0px","right":"0px","margin":"auto","min-height":"224px","border-radius":"1000px 1000px 1000px 1000px","z-index":"2"},"silex-id-1498140563493-2":{"width":"","background-color":"","min-height":"216px"},"silex-id-1498140563494-3":{"top":"289px","left":"5px"},"silex-id-1498140567588-4":{"width":"220px","min-height":"36px","top":"164px","left":"0px"},"silex-id-1498142759945-3":{"width":"","background-color":"","min-height":"20px"},"silex-id-1498142759946-4":{"top":"361px","left":"5px"},"silex-id-1498142765944-5":{"width":"764px","background-color":"transparent","min-height":"21px","top":"-7px","left":"0px","border-width":"1px 0 0 0 ","border-style":"solid"},"silex-id-1498142902362-6":{"width":"","background-color":"","min-height":"260px"},"silex-id-1498142902364-7":{"top":"416px","left":"5px"},"silex-id-1498143087140-9":{"width":"567px","min-height":"25px","top":"0px","left":"0px"},"silex-id-1498144364402-2":{"width":"764px","min-height":"100px","top":"98px","left":"0px"},"silex-id-1498144495709-3":{"width":"21px","min-height":"21px","top":"69px","left":"0px"},"silex-id-1498144538986-4":{"width":"200px","min-height":"21px","top":"73px","left":"26px"},"silex-id-1498208570717-5":{"width":"21px","min-height":"21px","top":"69px","left":"250px"},"silex-id-1498208603522-6":{"width":"108px","min-height":"21px","top":"73px","left":"273px"},"silex-id-1498212161949-7":{"width":"","background-color":"","min-height":"260px"},"silex-id-1498212161960-8":{"top":"766px","left":"5px"},"silex-id-1498212553910-9":{"width":"567px","min-height":"25px","top":"0px","left":"0px"},"silex-id-1498214008319-12":{"width":"270px","min-height":"21px","top":"73px","left":"26px"},"silex-id-1498214008321-13":{"width":"21px","min-height":"21px","top":"69px","left":"301px"},"silex-id-1498214008323-14":{"width":"200px","min-height":"21px","top":"73px","left":"324px"},"silex-id-1498214244774-15":{"width":"21px","min-height":"21px","top":"69px","left":"0px"},"silex-id-1498216259721-16":{"width":"764px","min-height":"100px","top":"98px","left":"0px"},"silex-id-1498216452483-17":{"width":"","background-color":"","min-height":"260px"},"silex-id-1498216452485-18":{},"silex-id-1498216603584-19":{"width":"567px","min-height":"25px","top":"0px","left":"0px"},"silex-id-1498216982199-21":{"width":"21px","min-height":"21px","top":"69px","left":"0px"},"silex-id-1498217009643-22":{"width":"220px","min-height":"21px","top":"73px","left":"26px"},"silex-id-1498217105246-23":{"width":"21px","min-height":"21px","top":"69px","left":"248px"},"silex-id-1498217122966-24":{"width":"286px","min-height":"21px","top":"73px","left":"271px"},"silex-id-1498217315638-25":{"width":"764px","min-height":"100px","top":"111px","left":"0px"},"silex-id-1498217391130-26":{"width":"","background-color":"","min-height":"260px"},"silex-id-1498217391131-27":{"top":"1645px","left":"5px"},"silex-id-1498217403632-28":{"width":"567px","min-height":"25px","top":"0px","left":"0px"},"silex-id-1498217561833-30":{"width":"","background-color":"","min-height":"100px"},"silex-id-1498217627571-32":{"width":"21px","min-height":"21px","top":"69px","left":"0px"},"silex-id-1498217648257-33":{"width":"230px","min-height":"21px","top":"73px","left":"26px"},"silex-id-1498217659010-34":{"width":"21px","min-height":"21px","top":"69px","left":"269px"},"silex-id-1498217675613-35":{"width":"286px","min-height":"21px","top":"73px","left":"292px"},"silex-id-1498217783113-36":{"width":"764px","min-height":"100px","top":"111px","left":"0px"},"silex-id-1498224697016-37":{"width":"764px","min-height":"103px","top":"25px","left":"0px"},"silex-id-1498224948680-38":{"width":"171px","top":"346px","left":"0px","right":"0px","margin":"auto","min-height":"37px"},"silex-id-1498225110649-41":{"width":"764px","background-color":"transparent","min-height":"21px","top":"10px","left":"0px","border-width":"1px 0 0 0 ","border-style":"solid"},"silex-id-1498225110649-40":{"width":"","background-color":"","min-height":"222px"},"silex-id-1498225143399-45":{"width":"252px","top":"391px","left":"0px","right":"0px","margin":"auto","background-color":"transparent","min-height":"21px","border-width":"1px 0 0 0","border-style":"solid"},"silex-id-1498225439882-46":{"width":"30px","min-height":"30px","top":"426px","left":"59px"},"silex-id-1498225520719-47":{"width":"198px","min-height":"100px","top":"419px","left":"100px"},"silex-id-1498226626422-48":{"width":"30px","min-height":"30px","top":"556px","left":"59px"},"silex-id-1498226663969-49":{"width":"198px","min-height":"100px","top":"554px","left":"100px"},"silex-id-1498227268553-50":{"width":"30px","min-height":"30px","top":"686px","left":"59px"},"silex-id-1498227296723-51":{"width":"198px","min-height":"100px","top":"689px","left":"100px"},"silex-id-1498228151549-57":{"width":"30px","min-height":"30px","top":"816px","left":"59px"},"silex-id-1498228174808-58":{"width":"198px","min-height":"100px","top":"824px","left":"100px"},"silex-id-1498228881073-59":{"width":"185px","top":"975px","left":"0px","right":"0px","margin":"auto","min-height":"37px"},"silex-id-1498228881103-60":{"width":"252px","top":"1023px","left":"0px","right":"0px","margin":"auto","background-color":"transparent","min-height":"21px","border-width":"1px 0 0 0","border-style":"solid"},"silex-id-1498229060148-61":{"width":"252px","top":"1042px","left":"0px","right":"0px","margin":"auto","min-height":"100px","background-color":"transparent"},"silex-id-1498231074627-62":{"width":"217px","top":"1157px","left":"0px","right":"0px","margin":"auto","min-height":"21px"},"silex-id-1498231074645-63":{"width":"252px","top":"1203px","left":"0px","right":"0px","margin":"auto","background-color":"transparent","min-height":"20px","border-width":"1px 0 0 0","border-style":"solid"},"silex-id-1498231158135-64":{"width":"252px","top":"1227px","left":"0px","right":"0px","margin":"auto","min-height":"100px","background-color":"transparent"},"silex-id-1498231464589-65":{"width":"190px","top":"1524px","left":"0px","right":"0px","margin":"auto","min-height":"37px"},"silex-id-1498231464593-66":{"width":"252px","top":"1565px","left":"0px","right":"0px","margin":"auto","background-color":"transparent","min-height":"20px","border-width":"1px 0 0 0","border-style":"solid"},"silex-id-1498231953064-68":{"width":"20px","min-height":"22px","top":"1722px","left":"61px"},"silex-id-1498231962083-69":{"width":"40px","min-height":"21px","top":"1725px","left":"88px"},"silex-id-1498232022875-70":{"width":"252px","min-height":"72px","top":"1681px","left":"56px"},"silex-id-1498232022889-71":{"width":"20px","min-height":"22px","top":"1639px","left":"61px"},"silex-id-1498232022904-72":{"width":"40px","min-height":"21px","top":"1643px","left":"88px"},"silex-id-1498233853504-74":{"width":"","background-color":"","min-height":"20px"},"silex-id-1498233863905-76":{"width":"764px","background-color":"transparent","min-height":"21px","top":"10px","left":"0px","border-width":"1px 0 0 0 ","border-style":"solid"},"silex-id-1498233943230-77":{"width":"","background-color":"","min-height":"100px"},"silex-id-1498233943231-78":{"min-height":"100px"},"silex-id-1498233950932-79":{"width":"308px","min-height":"36px","top":"63px","left":"0px"},"silex-id-1498234033841-80":{"width":"","background-color":"","min-height":"100px"},"silex-id-1498234033842-81":{"min-height":"100px"},"silex-id-1498234049164-82":{"width":"764px","background-color":"transparent","min-height":"21px","top":"7px","left":"0px","border-width":"1px 0 0 0 ","border-style":"solid"},"silex-id-1498235726246-86":{"width":"","background-color":"","min-height":"645px"},"silex-id-1498235726247-87":{"top":"2225px","left":"5px"},"silex-id-1498235778757-88":{"width":"227px","min-height":"41px","top":"117px","left":"535px"},"silex-id-1498235832289-89":{"width":"227px","min-height":"67px","top":"493px","left":"420px"},"silex-id-1498235892088-90":{"width":"267px","top":"511px","left":"5px","min-height":"76px","z-index":"2"},"silex-id-1498235947496-91":{"width":"227px","min-height":"67px","top":"58px","left":"127px"},"silex-id-1498236044716-92":{"width":"266px","top":"170px","left":"-42px","min-height":"95px","z-index":"2"},"silex-id-1498236087583-93":{"width":"227px","min-height":"67px","top":"2061px","left":"991px"},"silex-id-1498236163629-94":{"width":"282px","min-height":"114px","top":"394px","left":"-83px"},"silex-id-1498485026494-0":{"width":"31px","min-height":"31px","top":"32px","left":"485px"},"silex-id-1498485495610-1":{"width":"31px","min-height":"31px","top":"32px","left":"525px"},"silex-id-1498485623096-2":{"width":"31px","min-height":"31px","top":"32px","left":"565px"},"silex-id-1498487120808-3":{"width":"100px","top":"410px","left":"200px","/* chrome, safari, opera */\n    transform":"rotate(45deg)","background-color":"transparent","min-height":"134px","z-index":"2","-ms-transform":"rotate(45deg)","/* ie 9 */\n    -ms-transform-origin":"20% 40%","/* ie 9 */\n    -webkit-transform":"rotate(45deg)","/* chrome, safari, opera */\n    -webkit-transform-origin":"20% 40%","transform-origin":"20% 40%","border-width":"0 0 0 1px ","border-style":"solid"},"silex-id-1498487418874-4":{"width":"65px","top":"356px","left":"170px","/* chrome, safari, opera */\n    transform":"rotate(45deg)","background-color":"transparent","min-height":"115px","z-index":"2","-ms-transform":"rotate(55deg)","/* ie 9 */\n    -ms-transform-origin":"20% 40%","/* ie 9 */\n    -webkit-transform":"rotate(55deg)","/* chrome, safari, opera */\n    -webkit-transform-origin":"20% 40%","transform-origin":"20% 40%","border-width":"0 0 0 1px","border-style":"solid"},"silex-id-1498487969424-6":{"width":"101px","top":"64px","left":"232px","/* chrome, safari, opera */\n    transform":"rotate(45deg)","background-color":"transparent","min-height":"76px","z-index":"2","-ms-transform":"rotate(55deg)","/* ie 9 */\n    -ms-transform-origin":"20% 40%","/* ie 9 */\n    -webkit-transform":"rotate(55deg)","/* chrome, safari, opera */\n    -webkit-transform-origin":"20% 40%","transform-origin":"20% 40%","border-width":"1px 0 0 0 ","border-style":"solid"},"silex-id-1498573059514-9":{"width":"888px","min-height":"654px","top":"-41px","left":"-74px"},"silex-id-1498658339432-1":{"width":"","background-color":"","min-height":"100px"},"silex-id-1498658592101-3":{"width":"599px","background-color":"transparent","min-height":"58px","top":"0px","left":"1px"},"silex-id-1498751845681-6":{"width":"567px","top":"39px","left":"0px","color":"#4f5d6d","min-height":"21px"},"silex-id-1498815121143-7":{"width":"365px","top":"65px","left":"825px","background-color":"transparent","min-height":"2449px"},"silex-id-1498827480807-9":{"width":"252px","min-height":"65px","top":"1594px","left":"56px"},"silex-id-1498831558401-0":{"width":"567px","top":"39px","left":"0px","color":"#4f5d6d","min-height":"21px"},"silex-id-1498831825924-1":{"width":"567px","top":"39px","left":"0px","color":"#4f5d6d","min-height":"21px"},"silex-id-1499183658984-2":{"width":"567px","top":"39px","left":"0px","color":"#4f5d6d","min-height":"21px"},"silex-id-1499268704859-0":{"width":"40px","top":"152px","left":"199px","display":"none","min-height":"26px","z-index":"3"},"silex-id-1499271152971-1":{"width":"35px","top":"103px","left":"1356px","display":"none","min-height":"23px"},"silex-id-1499697527046-0":{"width":"252px","top":"1882px","left":"0px","right":"0px","margin":"auto","background-color":"transparent","min-height":"20px","border-width":"1px 0 0 0","border-style":"solid"},"silex-id-1499697527062-1":{"width":"190px","top":"1764px","left":"0px","right":"0px","margin":"auto","min-height":"37px"}},"mobile":{"silex-id-1498140136781-1":{"min-height":"100px","top":"4739px","left":"276px","width":"115px"},"silex-id-1498054131009-6":{"width":"304px","top":"150px","left":"70px","min-height":"54px"},"silex-id-1498054823568-6":{"width":"21px","top":"5173px","left":"435px","min-height":"21px"},"silex-id-1498054233829-8":{"top":"230px","left":"0px"},"silex-id-1498054233828-7":{"min-height":"198px","top":"0px","left":"11px","width":"457px"},"silex-id-1498054245702-9":{"left":"274px","top":"38px","width":"20px","min-height":"21px"},"silex-id-1498054849159-7":{"left":"185px","top":"4934px"},"silex-id-1498054705241-2":{"left":"172px","top":"5094px"},"silex-id-1498054608406-0":{"left":"89px","top":"5094px"},"silex-id-1498140563494-3":{"top":"488px","left":"0px"},"silex-id-1498140563493-2":{"min-height":"284px","top":"0px","left":"14px","width":"451px"},"silex-id-1498658592101-3":{"top":"14px","left":"102px","width":"250px","min-height":"169px"},"silex-id-1498054727408-3":{"left":"110px","top":"5241px"},"silex-id-1498054122181-5":{"top":"60px","left":"0px"},"silex-id-1498054122181-4":{"min-height":"230px"},"silex-id-1498224697016-37":{"top":"4px","left":"12px","width":"432px","min-height":"189px"},"silex-id-1498208570717-5":{"top":"305px","left":"217px","width":"21px","min-height":"20px"},"silex-id-1498142902364-7":{"top":"601px","left":"0px"},"silex-id-1498142902362-6":{"min-height":"420px","top":"0px","left":"12px","width":"20px"},"silex-id-1498143087140-9":{"width":"365px","top":"0px","left":"45px","min-height":"40px"},"silex-id-1498208603522-6":{"top":"35px","left":"175px","width":"135px","min-height":"21px"},"silex-id-1498751845681-6":{"left":"165px","top":"100px","width":"114px","min-height":"25px"},"silex-id-1498212553910-9":{"width":"218px","min-height":"42px","top":"0px","left":"113px"},"silex-id-1498212161960-8":{"top":"1021px","left":"0px"},"silex-id-1498212161949-7":{"min-height":"426px"},"silex-id-1498228881073-59":{"left":"136px","top":"0px","width":"184px","min-height":"37px"},"silex-id-1498831558401-0":{"left":"193px","top":"100px","width":"115px","min-height":"25px"},"silex-id-1498831825924-1":{"left":"174px","top":"100px","width":"114px","min-height":"25px"},"silex-id-1498214008319-12":{"top":"24px","left":"116px","width":"100px","min-height":"76px"},"silex-id-1498214008323-14":{"top":"35px","left":"257px","width":"133px","min-height":"21px"},"silex-id-1498217122966-24":{"top":"38px","left":"244px","width":"122px","min-height":"40px"},"silex-id-1498216603584-19":{"top":"0px","left":"37px","width":"370px","min-height":"100px"},"silex-id-1498216452485-18":{"top":"1447px","left":"0px"},"silex-id-1498216452483-17":{"min-height":"364px"},"silex-id-1498217391130-26":{"min-height":"424px"},"silex-id-1498217391131-27":{"top":"1811px","left":"0px"},"silex-id-1498217675613-35":{"top":"28px","left":"246px","width":"128px","min-height":"38px"},"silex-id-1498217403632-28":{"top":"0px","left":"54px","width":"336px","min-height":"100px"},"silex-id-1498231074627-62":{"min-height":"36px","top":"583px","left":"76px","width":"213px"},"silex-id-1498231464589-65":{"top":"1227px","left":"95px","width":"191px","min-height":"36px"},"silex-id-1498827480807-9":{"top":"570px","left":"129px","width":"197px","min-height":"65px"},"silex-id-1498232022875-70":{"top":"1189px","left":"227px","width":"195px","min-height":"72px"},"silex-id-1498815121143-7":{"width":"455px","top":"2323px","left":"12px","background-color":"transparent","min-height":"768px"},"silex-id-1498140567588-4":{"width":"220px"},"silex-id-1498054010607-3":{"width":"391px","min-height":"58px"},"silex-id-1498231464593-66":{"left":"11px","top":"-1778px"},"silex-id-1499183658984-2":{"left":"0px","top":"-649px","width":"114px","min-height":"25px"},"silex-id-1499697527046-0":{"left":"11px","top":"-1778px"},"silex-id-1499697527062-1":{"top":"1227px","left":"95px","width":"191px","min-height":"36px"}},"componentData":{"silex-id-1498229060148-61":{"name":"skill-bars1","templateName":"skill-bars","bars":[{"label":"French","percentage":"100","background":"#4f5d6d","labelColor":"#4f5d6d"},{"label":"English","percentage":"80","background":"#4f5d6d","labelColor":"#4f5d6d"}],"labelSize":"30"},"silex-id-1498231158135-64":{"name":"skill-bars1","templateName":"skill-bars","bars":[{"label":"JAVA","percentage":"80","background":"#4f5d6d","labelColor":"#4f5d6d"},{"label":"Javascript","percentage":"75","background":"#4f5d6d","labelColor":"#4f5d6d"},{"label":"HTML","percentage":"100","background":"#4f5d6d","labelColor":"#4f5d6d"},{"label":"CSS","percentage":"70","background":"#4f5d6d","labelColor":"#4f5d6d"},{"label":"SQL","percentage":"70","background":"#4f5d6d","labelColor":"#4f5d6d"}],"labelSize":"30"}}}]
+    </script>
+
+
+
+
+
+
+    <meta name="website-width" content="1200">
+    <style type="text/css" class="silex-style-settings">
+        .website-width {
+            width: 1200px;
+        }
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="publicationPath" content="/api/1.0/github/exec/put///myCV/master">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2.2" data-silex-viewport="">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="description" content="Tariq's CV">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="twitter:site" content="@tariqbenezza">
+    <meta name="twitter:title" content="Tariq Benezza's CV">
+    <meta name="og:title" content="Tariq Benezza's CV">
+    <meta name="twitter:description" content="This is my CV">
+    <meta name="og:description" content="This is my CV">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <meta name="twitter:card" content="summary">
+    <style id="current-page-style">
+        .page-page-1 {
+            display: inherit;
+        }
+    </style>
+    <!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove -->
+</head>
+
+<body data-silex-id="body-initial" class="body-initial enable-mobile silex-runtime" data-silex-type="container">
+    <div class="silex-pages">
+
+
+        <a id="page-page-1" data-silex-type="page" class="page-element page-link-active">Page 1</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498053985528-2 section-element" data-silex-id="silex-id-1498053985528-2">
+        <div data-silex-type="container" class="editable-style silex-id-1498053985527-1 container-element silex-element-content silex-container-content website-width prevent-draggable title" data-silex-id="silex-id-1498053985527-1">
+            <div data-silex-type="text" class="editable-style silex-id-1498054010607-3 text-element" data-silex-id="silex-id-1498054010607-3" style="">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;"><span style="font-family: verdana, sans-serif; font-size: -webkit-xxx-large;">TARIQ BENEZZA</span></div>
+
+                </div>
+            </div>
+
+
+            <div data-silex-type="container" class="editable-style silex-id-1498815121143-7 container-element right-column" data-silex-id="silex-id-1498815121143-7">
+                <div data-silex-type="html" class="editable-style html-element silex-id-1498231464593-66 education-liseret" data-silex-id="silex-id-1498231464593-66">
+                    <div class="silex-element-content"></div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498140136781-1 image-element avatar" data-silex-id="silex-id-1498140136781-1"><img src="img/myPic.png" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1498225439882-46 image-element generosity-icon" data-silex-id="silex-id-1498225439882-46"><img src="img/heart.png" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style silex-id-1498225520719-47 text-element generosity" data-silex-id="silex-id-1498225520719-47">
+                    <div class="silex-element-content normal"><b>Generosity</b><br><br>I invest time and energy to hone my skills and still keep, always in a good mood</div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498226626422-48 image-element loyalty-icon" data-silex-id="silex-id-1498226626422-48"><img src="img/loyality.png" class="silex-element-content"></div>
+
+
+
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498228881073-59 language" data-silex-id="silex-id-1498228881073-59">
+                    <div class="silex-element-content normal">
+                        <font size="6" face="verdana, sans-serif">LANGUAGE</font>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498226663969-49 loyalty" data-silex-id="silex-id-1498226663969-49">
+                    <div class="silex-element-content normal"><b>Loyalty</b><br><br>Always committed to the companies I used to work for</div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498228151549-57 image-element inspiring-icon" data-silex-id="silex-id-1498228151549-57"><img src="img/eureka.png" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498228174808-58 inspiring" data-silex-id="silex-id-1498228174808-58">
+                    <div class="silex-element-content normal"><b>Inspiring solutions&nbsp;</b><br><br>All the projects I led are still in use and help companies to have more and more clients</div>
+                </div>
+                <div data-silex-type="html" class="editable-style silex-id-1498229060148-61 html-element silex-component language-score" data-silex-id="silex-id-1498229060148-61">
+                    <div class="silex-element-content">
+                        <div class="skillbar clearfix " data-percent="100%">
+                            <div class="skillbar-title" style="background: #4f5d6d;"><span>French</span></div>
+                            <div class="skillbar-bar" style="background-color: rgb(79, 93, 109); width: 176.115px; overflow: hidden;"></div>
+                            <div class="skill-bar-percent"></div>
+                        </div>
+
+                        <div class="skillbar clearfix " data-percent="80%">
+                            <div class="skillbar-title" style="background: #4f5d6d;"><span>English</span></div>
+                            <div class="skillbar-bar" style="background-color: rgb(79, 93, 109); width: 141.034px; overflow: hidden;"></div>
+                            <div class="skill-bar-percent"></div>
+                        </div>
+
+                        <style type="text/css">
+                            .skillbar {
+                                position: relative;
+                                display: block;
+                                margin-bottom: 15px;
+                                width: 100%;
+                                background: #eee;
+                                height: 35px;
+                                border-radius: 3px;
+                                -moz-border-radius: 3px;
+                                -webkit-border-radius: 3px;
+                                -webkit-transition: 0.4s linear;
+                                -moz-transition: 0.4s linear;
+                                -ms-transition: 0.4s linear;
+                                -o-transition: 0.4s linear;
+                                transition: 0.4s linear;
+                                -webkit-transition-property: width, background-color;
+                                -moz-transition-property: width, background-color;
+                                -ms-transition-property: width, background-color;
+                                -o-transition-property: width, background-color;
+                                transition-property: width, background-color;
+                            }
+                            
+                            .skillbar-title {
+                                position: relative;
+                                float: left;
+                                width: 30%;
+                                font-weight: bold;
+                                font-size: 13px;
+                                color: #ffffff;
+                                background: #6adcfa;
+                                -webkit-border-top-left-radius: 3px;
+                                -webkit-border-bottom-left-radius: 4px;
+                                -moz-border-radius-topleft: 3px;
+                                -moz-border-radius-bottomleft: 3px;
+                                border-top-left-radius: 3px;
+                                border-bottom-left-radius: 3px;
+                            }
+                            
+                            .skillbar-title span {
+                                display: block;
+                                text-align: center;
+                                background: rgba(0, 0, 0, 0.1);
+                                height: 35px;
+                                line-height: 35px;
+                                -webkit-border-top-left-radius: 3px;
+                                -webkit-border-bottom-left-radius: 3px;
+                                -moz-border-radius-topleft: 3px;
+                                -moz-border-radius-bottomleft: 3px;
+                                border-top-left-radius: 3px;
+                                border-bottom-left-radius: 3px;
+                            }
+                            
+                            .skillbar-bar {
+                                float: left;
+                                height: 35px;
+                                width: 0px;
+                                border-radius: 0 3px 3px 0;
+                                -moz-border-radius: 0 3px 3px 0;
+                                -webkit-border-radius: 0 3px 3px 0;
+                            }
+                            
+                            .skill-bar-percent {
+                                position: absolute;
+                                right: 10px;
+                                top: 0;
+                                font-size: 11px;
+                                height: 35px;
+                                line-height: 35px;
+                                color: #ffffff;
+                                color: rgba(0, 0, 0, 0.4);
+                            }
+                        </style>
+                        <script type="text/javascript">
+                            var fillBarSize = $('.skillbar').width() * (1 - 30 / 100);
+                                            $('.skillbar').each(function(){
+                                              $(this).find('.skillbar-bar').delay(500).animate({
+                                                width: (fillBarSize * parseInt($(this).attr('data-percent')) / 100) + 'px'
+                                              },6000);
+                                            });
+                        </script>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498231074627-62 tech-skills" data-silex-id="silex-id-1498231074627-62">
+                    <div class="silex-element-content normal">
+                        <font size="6" face="verdana, sans-serif">TECH SKILLS</font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498227268553-50 image-element growth-icon" data-silex-id="silex-id-1498227268553-50"><img src="img/growth.png" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498227296723-51 growth" data-silex-id="silex-id-1498227296723-51">
+                    <div class="silex-element-content normal"><b>Teads growth</b><br><br>From thousand ad calls per day to more than a billion</div>
+                </div>
+                <div data-silex-type="html" class="editable-style html-element silex-id-1498231074645-63 tech-skills-liseret" data-silex-id="silex-id-1498231074645-63">
+                    <div class="silex-element-content"></div>
+                </div>
+                <div data-silex-type="html" class="editable-style html-element silex-component silex-id-1498231158135-64 tech-skills-score" data-silex-id="silex-id-1498231158135-64">
+                    <div class="silex-element-content">
+                        <div class="skillbar clearfix " data-percent="80%">
+                            <div class="skillbar-title" style="background: #4f5d6d;"><span>JAVA</span></div>
+                            <div class="skillbar-bar" style="background-color: rgb(79, 93, 109); width: 141.12px; overflow: hidden;"></div>
+                            <div class="skill-bar-percent"></div>
+                        </div>
+
+                        <div class="skillbar clearfix " data-percent="75%">
+                            <div class="skillbar-title" style="background: #4f5d6d;"><span>Javascript</span></div>
+                            <div class="skillbar-bar" style="background-color: rgb(79, 93, 109); width: 132.3px; overflow: hidden;"></div>
+                            <div class="skill-bar-percent"></div>
+                        </div>
+
+                        <div class="skillbar clearfix " data-percent="100%">
+                            <div class="skillbar-title" style="background: #4f5d6d;"><span>HTML</span></div>
+                            <div class="skillbar-bar" style="background-color: rgb(79, 93, 109); width: 176.4px; overflow: hidden;"></div>
+                            <div class="skill-bar-percent"></div>
+                        </div>
+
+                        <div class="skillbar clearfix " data-percent="70%">
+                            <div class="skillbar-title" style="background: #4f5d6d;"><span>CSS</span></div>
+                            <div class="skillbar-bar" style="background-color: rgb(79, 93, 109); width: 123.48px; overflow: hidden;"></div>
+                            <div class="skill-bar-percent"></div>
+                        </div>
+
+                        <div class="skillbar clearfix " data-percent="70%">
+                            <div class="skillbar-title" style="background: #4f5d6d;"><span>SQL</span></div>
+                            <div class="skillbar-bar" style="background-color: rgb(79, 93, 109); width: 123.48px; overflow: hidden;"></div>
+                            <div class="skill-bar-percent"></div>
+                        </div>
+
+                        <style type="text/css">
+                            .skillbar {
+                                position: relative;
+                                display: block;
+                                margin-bottom: 15px;
+                                width: 100%;
+                                background: #eee;
+                                height: 35px;
+                                border-radius: 3px;
+                                -moz-border-radius: 3px;
+                                -webkit-border-radius: 3px;
+                                -webkit-transition: 0.4s linear;
+                                -moz-transition: 0.4s linear;
+                                -ms-transition: 0.4s linear;
+                                -o-transition: 0.4s linear;
+                                transition: 0.4s linear;
+                                -webkit-transition-property: width, background-color;
+                                -moz-transition-property: width, background-color;
+                                -ms-transition-property: width, background-color;
+                                -o-transition-property: width, background-color;
+                                transition-property: width, background-color;
+                            }
+                            
+                            .skillbar-title {
+                                position: relative;
+                                float: left;
+                                width: 30%;
+                                font-weight: bold;
+                                font-size: 13px;
+                                color: #ffffff;
+                                background: #6adcfa;
+                                -webkit-border-top-left-radius: 3px;
+                                -webkit-border-bottom-left-radius: 4px;
+                                -moz-border-radius-topleft: 3px;
+                                -moz-border-radius-bottomleft: 3px;
+                                border-top-left-radius: 3px;
+                                border-bottom-left-radius: 3px;
+                            }
+                            
+                            .skillbar-title span {
+                                display: block;
+                                text-align: center;
+                                background: rgba(0, 0, 0, 0.1);
+                                height: 35px;
+                                line-height: 35px;
+                                -webkit-border-top-left-radius: 3px;
+                                -webkit-border-bottom-left-radius: 3px;
+                                -moz-border-radius-topleft: 3px;
+                                -moz-border-radius-bottomleft: 3px;
+                                border-top-left-radius: 3px;
+                                border-bottom-left-radius: 3px;
+                            }
+                            
+                            .skillbar-bar {
+                                float: left;
+                                height: 35px;
+                                width: 0px;
+                                border-radius: 0 3px 3px 0;
+                                -moz-border-radius: 0 3px 3px 0;
+                                -webkit-border-radius: 0 3px 3px 0;
+                            }
+                            
+                            .skill-bar-percent {
+                                position: absolute;
+                                right: 10px;
+                                top: 0;
+                                font-size: 11px;
+                                height: 35px;
+                                line-height: 35px;
+                                color: #ffffff;
+                                color: rgba(0, 0, 0, 0.4);
+                            }
+                        </style>
+                        <script type="text/javascript">
+                            var fillBarSize = $('.skillbar').width() * (1 - 30 / 100);
+                                            $('.skillbar').each(function(){
+                                              $(this).find('.skillbar-bar').delay(500).animate({
+                                                width: (fillBarSize * parseInt($(this).attr('data-percent')) / 100) + 'px'
+                                              },6000);
+                                            });
+                        </script>
+                    </div>
+                </div>
+
+
+                <div data-silex-type="html" class="editable-style html-element silex-id-1498228881103-60 language-liseret" data-silex-id="silex-id-1498228881103-60">
+                    <div class="silex-element-content"></div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498224948680-38 mostproud" data-silex-id="silex-id-1498224948680-38">
+                    <div class="silex-element-content normal">
+                        <font size="6" face="verdana, sans-serif">PROUD OF</font>
+                    </div>
+                </div>
+                <div data-silex-type="html" class="editable-style html-element silex-id-1498225143399-45 mostproud-liseret" data-silex-id="silex-id-1498225143399-45">
+                    <div class="silex-element-content"></div>
+                </div>
+                <div data-silex-type="image" class="editable-style image-element silex-id-1498232022889-71 md-calendar" data-silex-id="silex-id-1498232022889-71"><img src="img/icon_calendar.png" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498232022904-72 md-date" data-silex-id="silex-id-1498232022904-72">
+                    <div class="silex-element-content normal">2004</div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498231464589-65 education" data-silex-id="silex-id-1498231464589-65">
+                    <div class="silex-element-content normal">
+                        <font size="6" face="verdana, sans-serif">EDUCATION</font>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                <div data-silex-type="image" class="editable-style image-element silex-id-1498231953064-68 bd-calendar" data-silex-id="silex-id-1498231953064-68"><img src="img/icon_calendar.png" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style silex-id-1498231962083-69 text-element bd-date" data-silex-id="silex-id-1498231962083-69">
+                    <div class="silex-element-content normal">2005</div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498232022875-70 bd-degre" data-silex-id="silex-id-1498232022875-70">
+                    <div class="silex-element-content normal"><b>B.D in Computer Science</b>
+                        <div>Paris XII University</div>
+                    </div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498827480807-9 md-degre" data-silex-id="silex-id-1498827480807-9">
+                    <div class="silex-element-content normal"><b>M.D in Computer Science</b>
+                        <div>Paris XII University</div>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1499268704859-0 image-element drapeau" data-silex-id="silex-id-1499268704859-0"><img src="img/fr.png" class="silex-element-content"></div>
+                <div data-silex-type="html" class="editable-style html-element silex-id-1499697527046-0 a-day-print-liseret" data-silex-id="silex-id-1499697527046-0">
+                    <div class="silex-element-content"></div>
+                </div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1499697527062-1 a-day-print" data-silex-id="silex-id-1499697527062-1">
+                    <div class="silex-element-content normal">
+                        <div style="text-align: center;"><span style="font-family: verdana, sans-serif; font-size: xx-large;">A DAY&nbsp;</span></div>
+                        <div style="text-align: center;"><span style="font-family: verdana, sans-serif; font-size: xx-large;">IN&nbsp;</span></div>
+                        <div style="text-align: center;"><span style="font-family: verdana, sans-serif; font-size: xx-large;">MY LIFE</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498054122181-5 section-element" data-silex-id="silex-id-1498054122181-5">
+        <div data-silex-type="container" class="editable-style silex-id-1498054122181-4 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498054122181-4">
+            <div data-silex-type="image" class="editable-style silex-id-1498485623096-2 image-element twitter" data-silex-id="silex-id-1498485623096-2" data-silex-href="https://twitter.com/tariqbenezza"><img src="img/twitter.png" class="silex-element-content"></div>
+
+
+
+
+
+
+
+            <div data-silex-type="image" class="editable-style silex-id-1498485495610-1 image-element github" data-silex-id="silex-id-1498485495610-1" data-silex-href="https://github.com/tariqbenezza"><img src="img/github.png" class="silex-element-content"></div>
+
+            <div data-silex-type="text" class="editable-style silex-id-1498054131009-6 text-element presentation" data-silex-id="silex-id-1498054131009-6">
+                <div class="silex-element-content normal">
+                    <div style="text-align: center;">
+                        <font size="5" style="font-family: verdana, sans-serif;">Support Engineer&nbsp;</font><span style="font-family: verdana, sans-serif;">&nbsp;</span></div>
+
+                    <div style="text-align: center;">
+                        <font face="verdana, sans-serif"></font><span style="font-size: x-large; font-family: verdana, sans-serif;">&amp;&nbsp;</span>&nbsp;</div>
+                    <div style="text-align: center;">
+                        <font size="5" style="font-family: verdana, sans-serif;">Problems solver</font><span style="font-family: verdana, sans-serif;"></span>
+                    </div>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style silex-id-1498485026494-0 image-element linkedin" data-silex-id="silex-id-1498485026494-0" data-silex-href="https://www.linkedin.com/in/tariq-benezza-61342b8/"><img src="img/LinkedIn_logo_initials.png" class="silex-element-content"></div>
+
+
+
+        </div>
+
+        <div data-silex-type="image" class="editable-style silex-id-1499271152971-1 image-element fr" data-silex-id="silex-id-1499271152971-1"><img src="img/fr.png" class="silex-element-content"></div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498054233829-8 section-element" data-silex-id="silex-id-1498054233829-8">
+        <div data-silex-type="container" class="editable-style silex-id-1498054233828-7 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498054233828-7">
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div data-silex-type="container" class="editable-style silex-id-1498658592101-3 container-element contacts" data-silex-id="silex-id-1498658592101-3">
+
+
+
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498054727408-3 phone-number" data-silex-id="silex-id-1498054727408-3">
+                    <div class="silex-element-content normal">
+                        <font size="4">06.16.09.25.45</font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498054823568-6 image-element pinpoint" data-silex-id="silex-id-1498054823568-6"><img src="img/pinpoint.png" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style text-element silex-id-1498054849159-7 living-place" data-silex-id="silex-id-1498054849159-7">
+                    <div class="silex-element-content normal">
+                        <font size="4">Paris, France</font>
+                    </div>
+                </div>
+                <div data-silex-type="image" class="editable-style silex-id-1498054245702-9 image-element arobase" data-silex-id="silex-id-1498054245702-9"><img src="img/arobase01.jpg" class="silex-element-content"></div>
+                <div data-silex-type="image" class="editable-style silex-id-1498054705241-2 image-element phone" data-silex-id="silex-id-1498054705241-2"><img src="img/phone.png" class="silex-element-content"></div>
+                <div data-silex-type="text" class="editable-style silex-id-1498054608406-0 text-element mail" data-silex-id="silex-id-1498054608406-0">
+                    <div class="silex-element-content normal">
+                        <font size="4"><a href="mailto:tariq.benezza@gmail.com">tariq.benezza@gmail.com</a></font>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498140563494-3 section-element" data-silex-id="silex-id-1498140563494-3">
+        <div data-silex-type="container" class="editable-style silex-id-1498140563493-2 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498140563493-2">
+            <div data-silex-type="text" class="editable-style silex-id-1498224697016-37 text-element resume" data-silex-id="silex-id-1498224697016-37">
+                <div class="silex-element-content normal">
+                    <div><i><font face="verdana, sans-serif">More than 5 years of professional experiences in web development, training, customer support, and management fields.</font></i></div>
+                    <div><i><font face="verdana, sans-serif">Born in France and worked in different countries. Used to evolve in international environments</font></i></div>
+                    <div><i><font face="verdana, sans-serif">Both my personal and professional experiences made me a confident person with great leadership skills who can take initiatives to improve the efficiency of a company.</font></i></div>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style silex-id-1498140567588-4 text-element experience" data-silex-id="silex-id-1498140567588-4">
+                <div class="silex-element-content normal">
+                    <font size="6" face="verdana, sans-serif">EXPERIENCE</font>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498142759946-4 section-element" data-silex-id="silex-id-1498142759946-4">
+        <div data-silex-type="container" class="editable-style silex-id-1498142759945-3 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498142759945-3">
+            <div data-silex-type="html" class="editable-style silex-id-1498142765944-5 html-element experience-liseret" data-silex-id="silex-id-1498142765944-5">
+                <div class="silex-element-content"></div>
+            </div>
+
+        </div>
+
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498142902364-7 section-element sm-section" data-silex-id="silex-id-1498142902364-7">
+        <div data-silex-type="container" class="editable-style silex-id-1498142902362-6 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498142902362-6">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <div data-silex-type="text" class="editable-style text-element company silex-id-1499183658984-2" data-silex-id="silex-id-1499183658984-2">
+                <div class="silex-element-content normal"><a href="//www.secretmedia.com"><b><font size="4">SECRET MEDIA</font></b></a><br></div>
+            </div>
+            <div data-silex-type="text" class="editable-style silex-id-1498143087140-9 text-element title sm" data-silex-id="silex-id-1498143087140-9">
+                <div class="silex-element-content normal">
+                    <font size="4" face="verdana, sans-serif"><b>Senior Technical Support Engineer</b></font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style silex-id-1498144538986-4 text-element period-company" data-silex-id="silex-id-1498144538986-4">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">October 2016 - Ongoing</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498208603522-6 place-company" data-silex-id="silex-id-1498208603522-6">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">Paris, France</font>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style image-element silex-id-1498208570717-5 pinpoint-company" data-silex-id="silex-id-1498208570717-5"><img src="img/pinpoint.png" class="silex-element-content"></div>
+            <div data-silex-type="image" class="editable-style silex-id-1498144495709-3 image-element calendar-company" data-silex-id="silex-id-1498144495709-3"><img src="img/icon_calendar.png" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style silex-id-1498144364402-2 text-element company-description sm" data-silex-id="silex-id-1498144364402-2">
+                <div class="silex-element-content normal">
+                    <div>
+                        <ul>
+                            <li>
+                                <font face="verdana, sans-serif">Proactively support relationships with customers and partners.
+
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Development and delivery of differentiated custom solutions and presentations,&nbsp;including advanced technical concepts to key decision makers to address&nbsp;their business issues and needs.
+
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Participate in all appropriate product, sales, procedural training, and certification&nbsp;to acquire and maintain the knowledge necessary to be effective in the position.</font>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498212161960-8 section-element r1-section" data-silex-id="silex-id-1498212161960-8">
+        <div data-silex-type="container" class="editable-style silex-id-1498212161949-7 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498212161949-7">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498212553910-9 title" data-silex-id="silex-id-1498212553910-9">
+                <div class="silex-element-content normal">
+                    <font size="4" face="verdana, sans-serif"><b>Solutions architect</b></font>
+                </div>
+            </div>
+
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498214008319-12 period-company" data-silex-id="silex-id-1498214008319-12">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">September 2015 - October 2016</font>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style image-element silex-id-1498214008321-13 pinpoint-company" data-silex-id="silex-id-1498214008321-13"><img src="img/pinpoint.png" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498214008323-14 place-company" data-silex-id="silex-id-1498214008323-14">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">Paris, France</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498216259721-16 company-description" data-silex-id="silex-id-1498216259721-16">
+                <div class="silex-element-content normal">
+                    <div>
+                        <ul>
+                            <li>
+                                <font face="verdana, sans-serif">Responsible for the oversight and direction of solution design and take an active, multi-disciplinary governance role on partnership implementation projects.
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Provide coordination over all other support cases to facilitate a holistic view and interaction with each customer.
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Research and maintain a deep understanding of current and emerging technologies and solutions to solve business issues.</font>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498751845681-6 company" data-silex-id="silex-id-1498751845681-6">
+                <div class="silex-element-content normal">
+                    <font size="4" face="verdana, sans-serif"><b><a href="https://radiumone.com/">RADIUMONE</a></b></font>
+                </div>
+            </div>
+
+
+
+
+            <div data-silex-type="image" class="editable-style image-element silex-id-1498214244774-15 calendar-company" data-silex-id="silex-id-1498214244774-15"><img src="img/icon_calendar.png" class="silex-element-content"></div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498216452485-18 section-element" data-silex-id="silex-id-1498216452485-18">
+        <div data-silex-type="container" class="editable-style silex-id-1498216452483-17 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498216452483-17">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498217122966-24 place-company" data-silex-id="silex-id-1498217122966-24">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">Paris, France &amp; New York, USA</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498216603584-19 title" data-silex-id="silex-id-1498216603584-19">
+                <div class="silex-element-content normal">
+                    <font size="4" face="verdana, sans-serif"><b>Senior Technical Support Engineer</b></font>
+                </div>
+            </div>
+
+            <div data-silex-type="image" class="editable-style image-element silex-id-1498216982199-21 calendar-company" data-silex-id="silex-id-1498216982199-21"><img src="img/icon_calendar.png" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498217009643-22 period-company" data-silex-id="silex-id-1498217009643-22">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">June 2013 - October 2015</font>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style image-element silex-id-1498217105246-23 pinpoint-company" data-silex-id="silex-id-1498217105246-23"><img src="img/pinpoint.png" class="silex-element-content"></div>
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498217315638-25 company-description" data-silex-id="silex-id-1498217315638-25">
+                <div class="silex-element-content normal">
+                    <div>
+                        <ul>
+                            <li>
+                                <font face="verdana, sans-serif">Technical and functional expert
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Helping clients fulfilling their technical needs
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Providing feedback and key information to the technical and marketing teams.
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Analyze partner integration requirements and document the proposed integration strategy for project management team to create full functional specifications.</font>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498831558401-0 company" data-silex-id="silex-id-1498831558401-0">
+                <div class="silex-element-content normal">
+                    <a href="//www.teads.tv">
+                        <font face="verdana, sans-serif">
+                            <font size="4"><b>TEADS</b></font>
+                        </font>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498217391131-27 section-element" data-silex-id="silex-id-1498217391131-27">
+        <div data-silex-type="container" class="editable-style silex-id-1498217391130-26 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498217391130-26">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498217403632-28 title" data-silex-id="silex-id-1498217403632-28">
+                <div class="silex-element-content normal">
+                    <font size="4" face="verdana, sans-serif"><b>Head of technical support &amp; QA</b></font>
+                </div>
+            </div>
+
+            <div data-silex-type="image" class="editable-style image-element silex-id-1498217627571-32 calendar-company" data-silex-id="silex-id-1498217627571-32"><img src="img/icon_calendar.png" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498217648257-33 period-company" data-silex-id="silex-id-1498217648257-33">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">December 2010 - June 2013</font>
+                </div>
+            </div>
+            <div data-silex-type="image" class="editable-style image-element silex-id-1498217659010-34 pinpoint-company" data-silex-id="silex-id-1498217659010-34"><img src="img/pinpoint.png" class="silex-element-content"></div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498217675613-35 place-company" data-silex-id="silex-id-1498217675613-35">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">Paris, France</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498217783113-36 company-description" data-silex-id="silex-id-1498217783113-36">
+                <div class="silex-element-content normal">
+                    <div>
+                        <ul>
+                            <li>
+                                <font face="verdana, sans-serif">Handling requests from internal and external customers for all our advertising formats.
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Helping customers to implement our formats using our APIs and mobile SDK.
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Personalized assistance in solving technical issues.
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Writing user documentations for our French and international teams.
+                                </font>
+                            </li>
+                            <li>
+                                <font face="verdana, sans-serif">Testing and validating the new features of our different platforms.</font>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498831825924-1 company" data-silex-id="silex-id-1498831825924-1">
+                <div class="silex-element-content normal">
+                    <font size="4"><b><a href="//www.ebuzzing.com"><font face="verdana, sans-serif">EBUZZING</font></a><br></b></font>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498233943231-78 section-element day-in-my-life" data-silex-id="silex-id-1498233943231-78">
+        <div data-silex-type="container" class="editable-style silex-id-1498233943230-77 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498233943230-77">
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498233950932-79 day-of-life" data-silex-id="silex-id-1498233950932-79">
+                <div class="silex-element-content normal">
+                    <font size="6" face="verdana, sans-serif">A DAY OF MY LIFE</font>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498234033842-81 section-element day-in-my-life" data-silex-id="silex-id-1498234033842-81">
+        <div data-silex-type="container" class="editable-style silex-id-1498234033841-80 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498234033841-80">
+            <div data-silex-type="html" class="editable-style html-element silex-id-1498234049164-82 day-of-life-liseret" data-silex-id="silex-id-1498234049164-82">
+                <div class="silex-element-content"></div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498235947496-91" data-silex-id="silex-id-1498235947496-91">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">Reading books.<br>Computer science literature.<br>Steve Jobs bio, The wheel of time, Hyperion, etc</font>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div data-silex-type="container" class="prevent-draggable container-element editable-style silex-id-1498235726247-87 section-element day-in-my-life" data-silex-id="silex-id-1498235726247-87">
+        <div data-silex-type="container" class="editable-style silex-id-1498235726246-86 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1498235726246-86">
+
+            <div data-silex-type="text" class="editable-style silex-id-1498235778757-88 text-element" data-silex-id="silex-id-1498235778757-88">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">Working hard for the latest company above</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498235832289-89" data-silex-id="silex-id-1498235832289-89">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">Dreaming and trying to sleep</font>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498235892088-90" data-silex-id="silex-id-1498235892088-90">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">Volunteer at <a href="https://www.silexlabs.org/">Silex Labs</a><br>Helping people to pivot to digital world</font>
+                </div>
+            </div>
+
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498236044716-92" data-silex-id="silex-id-1498236044716-92">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">Spending time with Noah,&nbsp;
+
+                    </font>
+                    <div>
+                        <font face="verdana, sans-serif">baking with
+                            <a href="https://www.instagram.com/zozobenz/">
+                                <font color="#000000">@zozobenz</font>
+                            </a>&nbsp;
+                        </font>
+                    </div>
+                    <div>
+                        <font face="verdana, sans-serif">Happy family time</font>
+                    </div>
+                </div>
+            </div>
+            <div data-silex-type="text" class="editable-style text-element silex-id-1498236163629-94" data-silex-id="silex-id-1498236163629-94">
+                <div class="silex-element-content normal">
+                    <font face="verdana, sans-serif">Playing DOTA 2 with friends.<br>My favorite character ?&nbsp;
+
+                    </font>
+                    <div>
+                        <font face="verdana, sans-serif">Support &amp; healer of course
+                        </font>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div data-silex-type="container" class="editable-style silex-id-1498487120808-3 container-element volunteer-pointer" data-silex-id="silex-id-1498487120808-3"></div>
+
+            <div data-silex-type="container" class="editable-style container-element silex-id-1498487418874-4 playing-pointer" data-silex-id="silex-id-1498487418874-4"></div>
+            <div data-silex-type="container" class="editable-style container-element silex-id-1498487969424-6 reading-pointer" data-silex-id="silex-id-1498487969424-6"></div>
+
+
+
+            <div data-silex-type="image" class="editable-style silex-id-1498573059514-9 image-element" data-silex-id="silex-id-1498573059514-9"><img src="img/day-abder.png" class="silex-element-content"></div>
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
