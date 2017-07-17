@@ -449,24 +449,23 @@
         }
     </style>
     <script type="text/javascript" class="silex-script">
-        /*
-                $( document ).ready(function() {
-                    $('.avatar').mouseover(function() {
-                        $('.drapeau').fadeIn('slow');
-                        $('html,body').css('cursor','pointer');
-                        $('.presentation').html('<div class="silex-element-content normal"><div style="text-align: center;"><font size="5" style="font-family: verdana, sans-serif;">Ingénieur support&nbsp;</font><span style="font-family: verdana, sans-serif;">&nbsp;</span></div><div style="text-align: center;"><font face="verdana, sans-serif"></font><span style="font-size: x-large; font-family: verdana, sans-serif;">&amp;&nbsp;</span>&nbsp;</div><div style="text-align: center;"><font size="5" style="font-family: verdana, sans-serif;">Chercheur de solutions</font><span style="font-family: verdana, sans-serif;"></span></div></div>') ;
-                        $('.resume').html('<div class="silex-element-content normal"><div><i><font face="verdana, sans-serif">Plus de cinq ans d\'experience dans le developpement web, la formation, le support utilisateur et le management.</font></i></div><div><i><font face="verdana, sans-serif">Né en France, j\'ai eu l\'occasion de travailler à l\'international dans d\'autres pays.</font></i></div><div><i><font face="verdana, sans-serif">Mes experiences font de moi un leader fiable, serein et capable de prendre les initiatives nécessaires pour faire grandir une entreprise.</font></i></div></div>');
-                        $('.title.sm').html('<div class="silex-element-content normal"><font size="4" face="verdana, sans-serif"><b>Ingénieur Support Senior</b></font></div>');
-                        $('.company-description.sm').html('<div class="silex-element-content normal"><div><ul><li><font face="verdana, sans-serif">Support proactif dans la relation avec les clients et les partenaires.</font></li><li><font face="verdana, sans-serif">Developpements et livraisons de diverses solutions personnalisées. Concepts techniques avancés en pré-vente.</font></li><li><font face="verdana, sans-serif">Participation à l\'élaboration du produit, de la vente, de la formation et maintenance de la documentation..</font></li></ul></div></div>');
-                    });
-                    
-                    $('.avatar').mouseleave(function() {
-                        $('.drapeau').hide();
-                        $('html,body').css('cursor','default');
-                    });
-                    
-                });
-                */
+        $( document ).ready(function() {
+            $('.avatar').mouseover(function() {
+                $('.drapeau').fadeIn('slow');
+                $('html,body').css('cursor','pointer');
+            });
+            $('.avatar').click(function(){
+               $('.presentation').html('<div class="silex-element-content normal"><div style="text-align: center;"><font size="5" style="font-family: verdana, sans-serif;">Ingénieur support&nbsp;</font><span style="font-family: verdana, sans-serif;">&nbsp;</span></div><div style="text-align: center;"><font face="verdana, sans-serif"></font><span style="font-size: x-large; font-family: verdana, sans-serif;">&amp;&nbsp;</span>&nbsp;</div><div style="text-align: center;"><font size="5" style="font-family: verdana, sans-serif;">Chercheur de solutions</font><span style="font-family: verdana, sans-serif;"></span></div></div>') ;
+                $('.resume').html('<div class="silex-element-content normal"><div><i><font face="verdana, sans-serif">Plus de cinq ans d\'experience dans le developpement web, la formation, le support utilisateur et le management.</font></i></div><div><i><font face="verdana, sans-serif">Né en France, j\'ai eu l\'occasion de travailler à l\'international dans d\'autres pays.</font></i></div><div><i><font face="verdana, sans-serif">Mes experiences font de moi un leader fiable, serein et capable de prendre les initiatives nécessaires pour faire grandir une entreprise.</font></i></div></div>');
+                $('.title.sm').html('<div class="silex-element-content normal"><font size="4" face="verdana, sans-serif"><b>Ingénieur Support Senior</b></font></div>');
+                $('.company-description.sm').html('<div class="silex-element-content normal"><div><ul><li><font face="verdana, sans-serif">Support proactif dans la relation avec les clients et les partenaires.</font></li><li><font face="verdana, sans-serif">Developpements et livraisons de diverses solutions personnalisées. Concepts techniques avancés en pré-vente.</font></li><li><font face="verdana, sans-serif">Participation à l\'élaboration du produit, de la vente, de la formation et maintenance de la documentation..</font></li></ul></div></div>'); 
+            });
+            $('.avatar').mouseleave(function() {
+                $('.drapeau').hide();
+                $('html,body').css('cursor','default');
+            });
+            
+        });
     </script>
     <style class="silex-inline-styles" type="text/css">
         .body-initial {
