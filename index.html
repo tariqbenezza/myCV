@@ -3120,7 +3120,7 @@
                                     events: {
                                         click: function() {
                                         	if(this.options.url!=undefined){
-                                            location.href = this.options.url;
+                                            location.href = window.open(this.options.url, '_blank');
                                             }
                                         }
                                     }
